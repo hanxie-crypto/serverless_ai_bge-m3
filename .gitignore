@@ -1,0 +1,6 @@
+__pycache__
+app/models/bge-m3/pytorch_model.bin
+app/models/bge-m3/tokenizer.json
+app/models/bge-m3/sparse_linear.pt
+app/models/bge-m3/sentencepiece.bpe.model
+app/models/bge-m3/colbert_linear.pt

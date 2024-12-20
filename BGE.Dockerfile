@@ -1,6 +1,7 @@
 # docker build -t bge-m3:v1 . --platform linux/amd64 -f BGE.Dockerfile
 
-FROM  pytorch/pytorch:2.0.1-cuda11.7-cudnn8-devel
+# FROM  pytorch/pytorch:2.0.1-cuda11.7-cudnn8-devel
+FROM cnstark/pytorch:2.3.1-py3.10.15-cuda12.1.0-ubuntu22.04
 
 USER root
 
@@ -32,9 +33,9 @@ RUN ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
 
 ENV NVIDIA_DRIVER_CAPABILITIES compute,graphics,utility
 
-RUN apt-get update && \
-    apt-get install -y nvidia-container-toolkit-base && apt-get install libgl1-mesa-glx -y  && \
-    apt-get install -y libglib2.0-0 libsm6 libxrender1 libxext6 libvulkan1 libvulkan-dev vulkan-tools git && apt-get clean
+# RUN apt-get update && \
+#     apt-get install -y nvidia-container-toolkit-base && apt-get install libgl1-mesa-glx -y  && \
+#     apt-get install -y libglib2.0-0 libsm6 libxrender1 libxext6 libvulkan1 libvulkan-dev vulkan-tools git && apt-get clean
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py 
 
 # RUN git clone https://github.com/timdettmers/bitsandbytes.git --depth 1 -b main
