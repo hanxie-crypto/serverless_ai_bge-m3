@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  bge:
+    image: registry.cn-hangzhou.aliyuncs.com/serverlessdevshanxie/bert:v4
+    container_name: bge
+    restart: always
+    ports: # 生产环境建议不要暴露
+      - 8000:8000
+    networks:
+      - icb
+networks:
+  icb:
+    # driver: bridge
