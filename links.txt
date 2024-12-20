@@ -1,5 +1,10 @@
-https://huggingface.co/BAAI/bge-m3/blob/main/pytorch_model.bin
+https://huggingface.co/BAAI/bge-m3/resolve/main/pytorch_model.bin
   out=pytorch_model.bin
-
-
-
+https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer.json
+  out=tokenizer.json
+https://huggingface.co/BAAI/bge-m3/resolve/main/sparse_linear.pt
+  out=sparse_linear.pt
+https://huggingface.co/BAAI/bge-m3/resolve/main/sentencepiece.bpe.model
+  out=sentencepiece.bpe.model
+https://huggingface.co/BAAI/bge-m3/resolve/main/colbert_linear.pt
+  out=colbert_linear.pt
