@@ -10,3 +10,7 @@ pip3 install -r app/embedding/requirements.txt
 
 # 启动，在根目录
 python3 app/embedding/app/main.py
+
+# 构建镜像
+
+构建镜像需要先完成模型下载
